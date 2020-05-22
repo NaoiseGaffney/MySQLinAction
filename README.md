@@ -15,4 +15,14 @@ This video will be updated in due course.
 
 3. sudo mysql < Chinook_MySql_AutoIncrementPKs.sql
 
-4. mysql -> use Chinook; -> show tables;
+4. mysql -> use Chinook; -> show tables; -> desc Genre; -> tee Logfile.txt -> notee
+
+5. source test.sql
+
+6. select Title, Name from Album -> join Artist on Album.ArtistId = Artist.ArtistID -> limit 10;
+
+7. insert into Genre (Name) values('Trad'); -> select last_insert_id(); -> select * from Genre where GenreId = 26;
+
+8. update Genre set Name = 'Traditional' where Name = 'Trad';
+
+9. delete from Genre where Name = 'Traditional';
